@@ -54,6 +54,7 @@ function factorielleNumber(number) {
     return result;
 }
 //Test The function
+console.log(factorielleNumber(5)); // 120
 
 function trouverPlusGrandNombre(array) {
     //initializing a variable to store the result
