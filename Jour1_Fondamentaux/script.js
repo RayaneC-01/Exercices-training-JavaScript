@@ -33,10 +33,24 @@ function sumArray(array) {
     // Return the calculated sum
     return sum;
 }
+
 //Function to convert a string in Upper Case
 function UpperCase(string) {
     //using method toUpperCase() to convert the string
     let upperCase = string.toUpperCase();
     //return the string 
     return upperCase;
+}
+
+function factorielleNumber(number) {
+    //initializing a variable to store the result
+    let result = 1;
+    //iterating over the number 
+    for (let i = 1; i <= number; i++) {
+        //multiplying the result by the current number
+        result *= i;
+    }
+    //returning the result
+    return result;
+
 }
