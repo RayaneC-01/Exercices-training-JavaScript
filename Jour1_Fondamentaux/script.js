@@ -47,6 +47,7 @@ function UpperCase(string) {
 //Test the function
 // console.log(UpperCase("hello")); //HELLO
 
+
 // Function to calculate the factoriel of a number
 function factorielleNumber(number) {
     //initializing a variable to store the result
@@ -64,6 +65,7 @@ console.log(factorielleNumber(5)); // 120
 
 
 let displayText = document.getElementById("displayText");
+// function the largest number in an array
 function trouverPlusGrandNombre(array) {
     //initializing a variable to store the result
     let plusGrand = array[0];
