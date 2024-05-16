@@ -17,8 +17,8 @@ function isEven(number) {
         return false;
     }
 }
-console.log(isEven(4)); // true
-console.log(isEven(5)); // false
+// console.log(isEven(4)); // true
+// console.log(isEven(5)); // false
 
 
 // Function to calculate the sum of an array of numbers
@@ -33,4 +33,10 @@ function sumArray(array) {
     // Return the calculated sum
     return sum;
 }
-
+//Function to convert a string in Upper Case
+function UpperCase(string) {
+    //using method toUpperCase() to convert the string
+    let upperCase = string.toUpperCase();
+    //return the string 
+    return upperCase;
+}
