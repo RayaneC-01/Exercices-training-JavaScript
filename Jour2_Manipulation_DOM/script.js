@@ -34,3 +34,15 @@
 //     let textInput = document.getElementById("text");
 //     console.log(textInput.value);
 // });
+
+//liste à puces à partir d'un tableau d'éléments
+const cars = ["Volvo", "Toyota", "Kia", "Audi", "Ferrari", "Peugeot"];
+const ul = document.getElementById("myList");
+for (let i = 0; i < cars.length; i++) {
+    const li = document.createElement("li");
+    li.appendChild(document.createTextNode(cars[i]));
+    ul.appendChild(li);
+}
+
+
+//carrousel d'images simple qui change automatiquement toutes les quelques secondes
