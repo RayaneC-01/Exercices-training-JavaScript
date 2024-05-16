@@ -15,7 +15,7 @@
 //     alert("You clicked the button!");
 // });
 
-//Hover change Bg-color 
+//Hover change Bg-color
 // const element = document.getElementById("myElement");
 // console.log(myElement);
 
@@ -25,4 +25,12 @@
 
 // element.addEventListener('mouseout', () => {
 //     element.style.backgroundColor = '#fff';
+// });
+
+//récupérer la valeur du champ de texte et afficher dans la console
+// let form = document.getElementById("myForm");
+// form.addEventListener("submit", function (event) {
+//     event.preventDefault();
+//     let textInput = document.getElementById("text");
+//     console.log(textInput.value);
 // });
