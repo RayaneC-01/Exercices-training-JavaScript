@@ -35,14 +35,22 @@
 //     console.log(textInput.value);
 // });
 
-//liste à puces à partir d'un tableau d'éléments
+
+// Liste à puces à partir d'un tableau d'éléments
 const cars = ["Volvo", "Toyota", "Kia", "Audi", "Ferrari", "Peugeot"];
 const ul = document.getElementById("myList");
+
+// Boucle sur le tableau d'éléments
 for (let i = 0; i < cars.length; i++) {
+    // Crée un élément de liste (li)
     const li = document.createElement("li");
+
+    // Ajoute le texte de l'élément de liste
     li.appendChild(document.createTextNode(cars[i]));
+
+    // Ajoute l'élément de liste à la liste (ul)
     ul.appendChild(li);
 }
 
-
 //carrousel d'images simple qui change automatiquement toutes les quelques secondes
+
