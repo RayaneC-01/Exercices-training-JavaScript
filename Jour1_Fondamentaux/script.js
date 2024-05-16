@@ -52,5 +52,20 @@ function factorielleNumber(number) {
     }
     //returning the result
     return result;
+}
+//Test The function
 
+function trouverPlusGrandNombre(array) {
+    //initializing a variable to store the result
+    let plusGrand = array[0];
+    //iterating over the number
+    for (let i = 1; i <= array.length; i++) {
+        // If current element is larger than largest
+        if (array[i] > plusGrand) {
+            //updating the result
+            plusGrand = array[i]
+        }
+    }
+    //returning the result
+    return plusGrand;
 }
