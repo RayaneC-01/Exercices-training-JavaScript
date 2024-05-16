@@ -16,13 +16,13 @@
 // });
 
 //Hover change Bg-color 
-const element = document.getElementById("myElement");
-console.log(myElement);
+// const element = document.getElementById("myElement");
+// console.log(myElement);
 
-element.addEventListener('mouseover', () => {
-    element.style.backgroundColor = 'yellow';
-});
+// element.addEventListener('mouseover', () => {
+//     element.style.backgroundColor = 'yellow';
+// });
 
-element.addEventListener('mouseout', () => {
-    element.style.backgroundColor = '#fff';
-});
+// element.addEventListener('mouseout', () => {
+//     element.style.backgroundColor = '#fff';
+// });
