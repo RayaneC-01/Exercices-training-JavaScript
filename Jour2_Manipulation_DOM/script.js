@@ -17,8 +17,10 @@
 
 //Hover change Bg-color 
 const element = document.getElementById("myElement");
+console.log(myElement);
+
 element.addEventListener('mouseover', () => {
-    element.style.backgroundColor = '#333';
+    element.style.backgroundColor = 'yellow';
 });
 
 element.addEventListener('mouseout', () => {
