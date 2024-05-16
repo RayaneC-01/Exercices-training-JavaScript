@@ -33,6 +33,9 @@ function sumArray(array) {
     // Return the calculated sum
     return sum;
 }
+//Test the function
+// console.log(sumArray([1, 2, 3, 4, 5])); // 15
+
 
 //Function to convert a string in Upper Case
 function UpperCase(string) {
@@ -41,6 +44,9 @@ function UpperCase(string) {
     //return the string 
     return upperCase;
 }
+//Test the function
+// console.log(UpperCase("hello")); //HELLO
+
 
 function factorielleNumber(number) {
     //initializing a variable to store the result
