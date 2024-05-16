@@ -47,7 +47,7 @@ function UpperCase(string) {
 //Test the function
 // console.log(UpperCase("hello")); //HELLO
 
-
+// Function to calculate the factoriel of a number
 function factorielleNumber(number) {
     //initializing a variable to store the result
     let result = 1;
@@ -62,6 +62,8 @@ function factorielleNumber(number) {
 //Test The function
 console.log(factorielleNumber(5)); // 120
 
+
+let displayText = document.getElementById("displayText");
 function trouverPlusGrandNombre(array) {
     //initializing a variable to store the result
     let plusGrand = array[0];
@@ -70,9 +72,13 @@ function trouverPlusGrandNombre(array) {
         // If current element is larger than largest
         if (array[i] > plusGrand) {
             //updating the result
-            plusGrand = array[i]
+            plusGrand = array[i];
         }
     }
     //returning the result
     return plusGrand;
 }
+// Test the function
+const numbers = [10, 15, 38, 20, 13];
+displayText.innerHTML = `
+<h2> Le plus grand nombre est: ` + trouverPlusGrandNombre(numbers);
