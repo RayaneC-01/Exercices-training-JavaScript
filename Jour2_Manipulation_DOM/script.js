@@ -53,28 +53,23 @@
 // }
 
 //carrousel d'images simple qui change automatiquement toutes les quelques secondes
-
 // Get the slideshow element and its children (the figures)
-let slideshow = document.getElementById('slideshow');
-let figures = slideshow.children;
+let slides = document.querySelectorAll('#slideshow figure');
+let currentSlide = 0;
+let totalSlides = slides.length;
 
-// Initialize the current figure index
-let currentFigure = 0;
-
-/**
- * Changes the opacity of the current figure to 0, increments the current figure index,
- * and sets the opacity of the new current figure to 1.
- */
-function nextFigure() {
-    // Change the opacity of the current figure to 0
-    figures[currentFigure].style.opacity = 0;
-
-    // Increment the current figure index
-    currentFigure = (currentFigure + 1) % figures.length;
-
-    // Set the opacity of the new current figure to 1
-    figures[currentFigure].style.opacity = 1;
+function showSlide(n) {
+    slides[currentSlide].style.display = 'none';
+    currentSlide = (n + totalSlides) % totalSlides;
+    slides[currentSlide].style.display = 'block';
 }
 
-// Change the figure every 5 seconds
-setInterval(nextFigure, 5000);
+function nextSlide() {
+    showSlide(currentSlide + 1);
+}
+
+// Change slide every 3 seconds
+setInterval(nextSlide, 5000);
+
+// Show the first slide initially
+showSlide(currentSlide);
