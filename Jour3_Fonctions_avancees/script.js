@@ -64,4 +64,25 @@
 // console.log(countChars("hahaha")); // Affichera {h: 3, a: 3}
 
 //4.Écrire une fonction qui prend deux tableaux et renvoie un tableau contenant uniquement les éléments communs aux deux tableaux.
+// function commonElements(array1, array2) {
+//     // Convertir les tableaux en ensembles (sets)
+//     let set1 = new Set(array1);
+//     let set2 = new Set(array2);
 
+//     // Initialiser un ensemble pour stocker les éléments communs
+//     let commonSet = new Set();
+
+//     // Itérer à travers le premier ensemble
+//     set1.forEach(element => {
+//         // Si l'élément est présent dans le deuxième ensemble, il est commun
+//         if (set2.has(element)) {
+//             commonSet.add(element); // Ajouter l'élément commun à l'ensemble commun
+//             console.log(element); // Afficher l'élément commun
+//         }
+//     });
+
+//     // Convertir l'ensemble commun en un tableau et le renvoyer
+//     return Array.from(commonSet);
+// }
+
+// 
