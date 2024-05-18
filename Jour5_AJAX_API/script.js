@@ -11,3 +11,5 @@ Construire une application de liste de tâches qui utilise une API pour sauvegar
 Créer un lecteur de flux RSS qui récupère et affiche les titres des articles à partir d'une source de flux donnée.
 */
 
+//requête AJAX vers une API publique pour récupérer des données et les afficher dans la console
+//https://jsonplaceholder.typicode.com/todos/1  
