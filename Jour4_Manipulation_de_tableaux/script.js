@@ -69,49 +69,50 @@ console.log(evenNumbers); // [2, 4, 6]
 
 
 //Fonction pour concaténer deux tableaux
-// function concatArrays(arr1, arr2) {
-//     //Initialize an empty array to store the concatenated elements
-//     let concatenatedArray = [];
-//     //Iterate through each element in the first array
-//     for (let i = 0; i < arr1.length; i++) {
-//         //Add the current element to the concatenated array
-//         concatenatedArray.push(arr1[i]);
-//     }
-//     //Iterate through each element in the second array
-//     for (let j = 0; j < arr2.length; j++) {
-//         //Add the current element to the concatenated array
-//         concatenatedArray.push(arr2[j]);
-//     }
-//     //Return the concatenated array
-//     return concatenatedArray;
-// }
-// //Example usage:
-// //Concatenate two arrays of numbers
-// let numbers1 = [1, 2, 3, 4, 5, 6, 7, 8,
-//     9, 10, 11, 12, 13, 14, 15, 16, 17, 18
-//     , 19, 20];
-// let numbers2 = [21, 22, 23, 24, 25, 26, 27, 28,
-//     29, 30, 31, 32, 33, 34, 35, 36, 37, 38
-//     , 39, 40];
-// let concatenatedNumbers = concatArrays(numbers1, numbers2);
+function concatArrays(arr1, arr2) {
+    //Initialize an empty array to store the concatenated elements
+    let concatenatedArray = [];
+    //Iterate through each element in the first array
+    for (let i = 0; i < arr1.length; i++) {
+        //Add the current element to the concatenated array
+        concatenatedArray.push(arr1[i]);
+    }
+    //Iterate through each element in the second array
+    for (let j = 0; j < arr2.length; j++) {
+        //Add the current element to the concatenated array
+        concatenatedArray.push(arr2[j]);
+    }
+    //Return the concatenated array
+    return concatenatedArray;
+}
+//Example usage:
+//Concatenate two arrays of numbers
+let numbers1 = [1, 2, 3, 4, 5, 6, 7, 8,
+    9, 10, 11, 12, 13, 14, 15, 16, 17, 18
+    , 19, 20];
+let numbers2 = [21, 22, 23, 24, 25, 26, 27, 28,
+    29, 30, 31, 32, 33, 34, 35, 36, 37, 38
+    , 39, 40];
+let concatenatedNumbers = concatArrays(numbers1, numbers2);
+
 
 //Fonction pour calculer la moyenne des nombres dans un tableau
-// function calculateAverage(arr) {
-//     // Initialize a variable to store the sum of the elements
-//     let sum = 0;
-//     // Iterate through each element in the array
-//     for (let i = 0; i < arr.length; i++) {
-//         // Add the current element to the sum
-//         sum += arr[i];
-//     }
-//     // Calculate the average by dividing the sum by the number of elements
-//     let average = sum / arr.length;
-//     // Return the average
-//     return average;
-// }
-// // Example usage:
-// // Calculate the average of an array of numbers
-// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9
-//     , 10, 11, 12, 13, 14, 15, 16, 17, 18,
-//     19, 20];
-// let average = calculateAverage(numbers);
+function calculateAverage(arr) {
+    // Initialize a variable to store the sum of the elements
+    let sum = 0;
+    // Iterate through each element in the array
+    for (let i = 0; i < arr.length; i++) {
+        // Add the current element to the sum
+        sum += arr[i];
+    }
+    // Calculate the average by dividing the sum by the number of elements
+    let average = sum / arr.length;
+    // Return the average
+    return average;
+}
+// Example usage:
+// Calculate the average of an array of numbers
+let numbers_avg = [1, 2, 3, 4, 5, 6, 7, 8, 9
+    , 10, 11, 12, 13, 14, 15, 16, 17, 18,
+    19, 20];
+let average = calculateAverage(numbers_avg);
