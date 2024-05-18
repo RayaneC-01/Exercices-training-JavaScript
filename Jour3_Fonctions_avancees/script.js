@@ -4,7 +4,7 @@
 2.Implémenter une fonction récursive pour calculer la somme des chiffres d'un nombre.
 3.Créer une fonction qui prend une chaîne et renvoie un objet contenant le nombre d'occurrences de chaque caractère dans la chaîne.
 4.Écrire une fonction qui prend deux tableaux et renvoie un tableau contenant uniquement les éléments communs aux deux tableaux.
-5.Implémenter une fonction qui prend une fonction de rappel et l'exécute après un certain délai.
+    5.Implémenter une fonction qui prend une fonction de rappel et l'exécute après un certain délai.
 */
 
 
@@ -85,4 +85,37 @@
 //     return Array.from(commonSet);
 // }
 
-// 
+//Implémenter une fonction qui prend une fonction de rappel et l'exécute après un certain délai.
+function delay(func, delay) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            try {
+                resolve(func());
+            } catch (error) {
+                reject(error);
+            }
+        }, delay);
+    });
+}
+// Test de la fonction avec console.log()
+// delay(() => console.log("Hello world!"), 1000); // Affichera "Hello world!" après 1 seconde
+
+import { getPixelColor, keyTap } from "robotjs";
+
+// Fonction pour vérifier si l'arbre est présent
+function checkTree() {
+    // Capture d'écran de la zone où se trouve l'arbre
+    let treeColor = getPixelColor(525, 400); // Coordonnées du pixel où se trouve l'arbre
+    // Vérification de la couleur du pixel pour détecter l'arbre
+    if (treeColor === "535353") { // Couleur de l'arbre
+        return true;
+    }
+    return false;
+}
+
+// Boucle infinie pour sauter si un arbre est détecté
+setInterval(() => {
+    if (checkTree()) {
+        keyTap("space");
+    }
+}, 100);
