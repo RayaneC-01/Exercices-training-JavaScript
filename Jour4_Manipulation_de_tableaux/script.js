@@ -94,3 +94,24 @@ Implémenter une fonction pour calculer la moyenne des nombres dans un tableau.
 //     29, 30, 31, 32, 33, 34, 35, 36, 37, 38
 //     , 39, 40];
 // let concatenatedNumbers = concatArrays(numbers1, numbers2);
+
+//Fonction pour calculer la moyenne des nombres dans un tableau
+// function calculateAverage(arr) {
+//     // Initialize a variable to store the sum of the elements
+//     let sum = 0;
+//     // Iterate through each element in the array
+//     for (let i = 0; i < arr.length; i++) {
+//         // Add the current element to the sum
+//         sum += arr[i];
+//     }
+//     // Calculate the average by dividing the sum by the number of elements
+//     let average = sum / arr.length;
+//     // Return the average
+//     return average;
+// }
+// // Example usage:
+// // Calculate the average of an array of numbers
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9
+//     , 10, 11, 12, 13, 14, 15, 16, 17, 18,
+//     19, 20];
+// let average = calculateAverage(numbers);
