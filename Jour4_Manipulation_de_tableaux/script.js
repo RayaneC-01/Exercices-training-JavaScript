@@ -8,10 +8,27 @@ Implémenter une fonction pour calculer la moyenne des nombres dans un tableau.
 */
 
 //Fonction inverser tableau 
-function inverserTableau(tab) {
-    let tabInverser = tab.reverse();
-    return tabInverser;
-}
-const reversed = ["Volvo", "Toyota", "Ford"];
-console.log("Reversed Array:" + inverserTableau(reversed));
+// function inverserTableau(tab) {
+//     let tabInverser = tab.reverse();
+//     return tabInverser;
+// }
+// const reversed = ["Volvo", "Toyota", "Ford"];
+// console.log("Reversed Array:" + inverserTableau(reversed));
 //Resultat Reversed Array:Ford,Toyota,Volvo
+
+//Fonction pour tri à bulles
+function triBulles(tab) {
+    let i, j, temp;
+    for (i = 0; i < tab.length; i++) {
+        for (j = 0; j < tab.length - 1; j++) {
+            if (tab[j] > tab[j + 1]) {
+                temp = tab[j];
+                tab[j] = tab[j + 1];
+                tab[j + 1] = temp;
+            }
+        }
+    }
+    return tab;
+}
+const sortBubbles = ["Volvo", "Toyota", "Ford"];
+console.log(triBulles(sortBubbles));
