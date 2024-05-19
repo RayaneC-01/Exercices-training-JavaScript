@@ -111,4 +111,17 @@ function randomString(length) {
 // Exemples d'utilisation
 console.log(randomString(15));
 
-//Implémenter une fonction pour vérifier si une chaîne est un anagramme d'une autre.
+//Implémenter une fonction pour vérifier si une chaîne est un anagramme d'une autre
+function isAnagram(str1, str2) {
+    // Convert both strings to lowercase
+    str1 = str1.toLowerCase();
+    str2 = str2.toLowerCase();
+    // Sort the characters in both strings
+    str1 = str1.split('').sort().join('');
+    str2 = str2.split('').sort().join('');
+    // Check if the sorted strings are equal
+    return str1 === str2;
+}
+// Exemples d'utilisation
+console.log(isAnagram("Hello", "Hello")); // true (anagramme = marie => aimer)
+console.log(isAnagram("Joey", "Joe")); // false
