@@ -23,6 +23,7 @@ console.log(isPalindrome("racecar")); // true
 console.log(isPalindrome("hello")); // false
 console.log(isPalindrome("Kayak")); // true
 
+
 //Implémenter une fonction pour compter le nombre de voyelles dans une chaîne
 function countVowels(str) {
     let number = 0;
@@ -37,6 +38,7 @@ function countVowels(str) {
 // Exemples d'utilisation
 console.log(countVowels("Hello World")); // 3
 
+
 //Implémenter une fonction pour compter le nombre de consonne dans une chaine
 function countConsonnes(str) {
     let number = 0;
@@ -50,4 +52,15 @@ function countConsonnes(str) {
 }
 // Exemples d'utilisation
 let strEx1 = "Bonjour tout le monde !";
-console.log("Il y'a " + countConsonnes(strEx1) + " consonnes dans la phrase"); 
+console.log("Il y'a " + countConsonnes(strEx1) + " consonnes dans la phrase");
+
+
+//Fonction pour inverser les mots dans une phrase
+function reverseWords(str) {
+    let words = str.split(' ');
+    let reversedWords = words.reverse();
+    let reversedSentence = reversedWords.join(' ');
+    return reversedSentence;
+}
+// Exemples d'utilisation
+console.log(reverseWords("Bonjour ici, Hello world !")); // World Hello
