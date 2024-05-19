@@ -64,3 +64,18 @@ function reverseWords(str) {
 }
 // Exemples d'utilisation
 console.log(reverseWords("Bonjour ici, Hello world !")); // World Hello
+
+//Fonction pour inverser les lettres dans le mot et dans la phrase (Ex: Bonjour ici => ici roujnoB)
+function reverseLetters(str) {
+    // Initialize an empty string to store the reversed string
+    let reversedStr = '';
+    // Iterate through each character in the input string
+    for (let i = str.length - 1; i >= 0; i--) {
+        // Add the current character to the reversed string
+        reversedStr += str[i];
+    }
+    // Return the reversed string
+    return reversedStr;
+}
+// Exemples d'utilisation
+console.log(reverseLetters("Bonjour ici, Hello world !")); // ici roujnoB, world ! olleH
