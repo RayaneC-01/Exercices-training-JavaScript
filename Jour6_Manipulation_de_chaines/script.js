@@ -27,8 +27,8 @@ console.log(isPalindrome("Kayak")); // true
 function countVowels(str) {
     let number = 0;
     let voyelles = ["a", "e", "i", "o", "u", "y"];
-    for (let elements of str.toLowerCase()) {
-        if (voyelles.includes(elements)) {
+    for (let elementsOfVowels of str.toLowerCase()) {
+        if (voyelles.includes(elementsOfVowels)) {
             number++;
         }
     }
@@ -36,3 +36,18 @@ function countVowels(str) {
 }
 // Exemples d'utilisation
 console.log(countVowels("Hello World")); // 3
+
+//Implémenter une fonction pour compter le nombre de consonne dans une chaine
+function countConsonnes(str) {
+    let number = 0;
+    let consonnes = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "z"];
+    for (let elements of str.toLowerCase()) {
+        if (consonnes.includes(elements)) {
+            number++;
+        }
+    }
+    return number;
+}
+// Exemples d'utilisation
+let strEx1 = "Bonjour tout le monde !";
+console.log("Il y'a " + countConsonnes(strEx1) + " consonnes dans la phrase"); 
