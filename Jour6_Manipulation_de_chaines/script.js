@@ -18,8 +18,21 @@ function isPalindrome(str) {
     // Comparer la chaîne nettoyée à son inverse
     return cleanedStr === reversedStr;
 }
-
 // Exemples d'utilisation
 console.log(isPalindrome("racecar")); // true
 console.log(isPalindrome("hello")); // false
 console.log(isPalindrome("Kayak")); // true
+
+//Implémenter une fonction pour compter le nombre de voyelles dans une chaîne
+function countVowels(str) {
+    let number = 0;
+    let voyelles = ["a", "e", "i", "o", "u", "y"];
+    for (let elements of str.toLowerCase()) {
+        if (voyelles.includes(elements)) {
+            number++;
+        }
+    }
+    return number;
+}
+// Exemples d'utilisation
+console.log(countVowels("Hello World")); // 3
