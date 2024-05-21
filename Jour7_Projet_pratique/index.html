@@ -12,6 +12,17 @@
         justify-content: space-between;
         margin-bottom: 10px;
       }
+      .card {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        background-color: grey;
+        display: inline-block;
+        text-align: center;
+        line-height: 100px;
+        font-size: 24px;
+        color: white;
+      }
     </style>
     <h1>Jeu de Pendu</h1>
     <div id="wordDisplay"></div>
@@ -24,6 +35,10 @@
     <input type="text" id="taskInput" />
     <button onclick="addTask()">Ajouter</button>
     <div id="taskList"></div>
+    <br /><br />
+    <hr />
+    <h1>Mini-jeu de mémoire</h1>
+    <div id="gameBoard"></div>
   </body>
   <script src="script.js"></script>
 </html>

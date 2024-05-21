@@ -77,3 +77,41 @@ function deleteTask(button) {
     taskDiv.remove();
 }
 
+//Fonction Jeu de mémoire
+const images = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+const cards = [...images, ...images].sort(() => 0.5 - Math.random());
+let firstCard, secondCard;
+
+function flipCard(card) {
+    if (card.innerText !== '' || secondCard) return;
+    card.innerText = card.dataset.image;
+
+    if (!firstCard) {
+        firstCard = card;
+    } else {
+        secondCard = card;
+        setTimeout(checkMatch, 500);
+    }
+}
+
+function checkMatch() {
+    if (firstCard.dataset.image === secondCard.dataset.image) {
+        firstCard.style.backgroundColor = 'green';
+        secondCard.style.backgroundColor = 'green';
+    } else {
+        firstCard.innerText = '';
+        secondCard.innerText = '';
+    }
+    firstCard = null;
+    secondCard = null;
+}
+
+const gameBoard = document.getElementById('gameBoard');
+cards.forEach(image => {
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.dataset.image = image;
+    card.onclick = () => flipCard(card);
+    gameBoard.appendChild(card);
+});
+
