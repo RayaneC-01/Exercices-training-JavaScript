@@ -6,11 +6,24 @@
     <title>jour 7</title>
   </head>
   <body>
+    <style>
+      .task {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    </style>
     <h1>Jeu de Pendu</h1>
     <div id="wordDisplay"></div>
     <input type="text" id="letterInput" maxlength="1" />
-    <button onclick="guessLetter()">Deviner</button>
+    <button onclick="guessLetter()">Deviner le mot</button>
     <p id="message"></p>
+    <br /><br />
+    <hr />
+    <h1>Gestionnaire de Tâches</h1>
+    <input type="text" id="taskInput" />
+    <button onclick="addTask()">Ajouter</button>
+    <div id="taskList"></div>
   </body>
   <script src="script.js"></script>
 </html>
